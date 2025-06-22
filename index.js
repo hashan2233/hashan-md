@@ -30,12 +30,12 @@ const axios = require('axios')
 const { File } = require('megajs')
 const prefix = '.'
 
-const ownerNumber = ['94726561647']
+const ownerNumber = ['94759588769']
 
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
 if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
-const sessdata = config.SESSION_ID.split("𝐇𝐀𝐒𝐇𝐀𝐍 𝐌𝐃=")[1];
+const sessdata = config.SESSION_ID.split("𝐇𝐀𝐒𝐇𝐀𝐍-𝐌𝐃=")[1];
 const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
@@ -92,14 +92,14 @@ let up = `*Connecting 𝐇𝐀𝐒𝐇𝐀𝐍 𝐌𝐃 Multidevice Whatsapp Bot
 
 *😈 : 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐂𝐇𝐀𝐍𝐍𝐄𝐋*
 *╭┈───────────╴╴╴•⟢*
-*│
+*│https://whatsapp.com/channel/0029VagNM9VJpe8WrmrQnw0r*
 *╰┈───────────╴╴╴•⟢*
 *😈 : 𝐂𝐎𝐍𝐓𝐀𝐂𝐓*
 *╭┈───────────╴╴╴•⟢*
-*│wa.me/94726561647
+*│wa.me/94726561647*
 *╰┈───────────╴╴╴•⟢*
 
-> 𝐏𝙾𝚆𝙴𝚁𝙳 𝐁𝚈 𝐌𝐈𝐓𝐙𝐈-𝐌𝐃`;
+> 𝐏𝙾𝚆𝙴𝚁𝙳 𝐁𝚈 𝐇𝐀𝐒𝐇𝐀𝐍-𝐌𝐃`;
 
 conn.sendMessage(conn.user.id,{ image: { url: `https://i.ibb.co/xSd4WSFd/SulaMd.jpg` }, caption: up })
 
